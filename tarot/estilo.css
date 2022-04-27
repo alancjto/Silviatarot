@@ -180,6 +180,11 @@ header {
     background: linear-gradient(to bottom, pink , rgb(197, 91, 157));
     
 }
+
+.transform {
+    transform: rotate(-20deg);
+
+}
 /* .flex-iten {
     background-color: blue;
     color: #fff;
