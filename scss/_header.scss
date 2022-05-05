@@ -1,0 +1,18 @@
+@import "base/variables"; 
+
+header {
+    background-color: $bg-color;
+    nav {
+        padding: $relleno;
+        ul {
+            il {
+                list-style: none;
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

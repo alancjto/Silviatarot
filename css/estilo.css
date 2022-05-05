@@ -1,0 +1,8 @@
+header {
+  background-color: pink; }
+  header nav {
+    padding: 20px; }
+    header nav ul il {
+      list-style: none; }
+      header nav ul il a:hover {
+        text-decoration: underline; }
