@@ -159,16 +159,16 @@ header {
     grid-area: nav2;
 }
 
-.flex-section {
+.grid-astro {
     grid-area: astro;
 }
-.flex-section {
+.grid-num {
     grid-area: num;
 }
-.flex-section {
+.flex-rider {
     grid-area: rider;
 }
-.flex-section {
+.flex-marse {
     grid-area: marse;
 }
 
