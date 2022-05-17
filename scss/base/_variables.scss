@@ -1,2 +1,56 @@
 $bg-color: pink;
 $relleno: 20px; 
+
+$lista1: red header yellow header nav green header nav ul il 
+$primario: join ($lista1, $listaAnidada) ;
+
+$listaAnidada: (red, header) (yellow, header nav) (green, header nav ul il) 
+$lista3: join ($lista1 , $listaAnidada)
+
+$lista4: append($lista3, (orange, pink, header),comma )
+
+header  {
+    color: $lista3 ;
+}
+
+
+$headings: (
+    header: 4em,
+    headernav: 3em,
+    header nav ul il: 2em, 
+
+);
+
+$header: map-get($headings, header)
+
+header {
+    font-size: $combinada; 
+}
+
+$colores: (
+    primario: black 
+    secundario: pink 
+);
+
+$combinada: map-merge($headings, $colores) ; 
+
+@each $color in $lista1 {
+    .#{$color} {
+        background-color: $color;
+    }
+    
+}
+
+@each $color , $header in $listaAnidada {
+    .#{$header}-icon {
+        fill: $color; 
+    }
+    
+}
+
+@each $heading ,$size in $headings {
+    #{$heading} {
+        font-size: $sizegit ;
+    }
+    
+}
