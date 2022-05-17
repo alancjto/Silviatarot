@@ -21,8 +21,17 @@
             </ul>
         </nav>
     </header>
-    
-    <div id="con" class="Contacto">
+    <div class="container">
+      <form id="contactus" action="" method="post" class="form">
+          <h3>Formulario de contacto</h3>
+          <fieldset> <input placeholder="Nombre y Apellido" type="text" tabindex="1" required autofocus> </fieldset>
+          <fieldset> <input placeholder="Correo electrónico" type="email" tabindex="2" required> </fieldset>
+          <fieldset> <input placeholder="Número de teléfono" type="tel" tabindex="3" required> </fieldset>
+          <fieldset> <textarea placeholder="Escriba su consulta..." tabindex="5" required></textarea> </fieldset>
+          <fieldset> <button name="submit" type="submit" id="contactus-submit"
+                  data-submit="...Sending">Enviar</button> </fieldset>
+      </form>
+    <!-- <div id="con" class="Contacto">
         <h2 class="title_color">Contacto</h2>
         <form>
             <div class="mb-3">
@@ -43,7 +52,7 @@
               <label class="form-check-label" for="exampleCheck1">Confirme</label>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
-          </form> 
+          </form>  -->
         <!-- <form action="">
             <div>
                 <label for="Nombre">Nombre</label>
