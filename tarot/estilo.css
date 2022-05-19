@@ -317,7 +317,7 @@ fieldset {
 
 
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     .body {
         display: block;
         width: 100%;
@@ -333,5 +333,4 @@ fieldset {
         align-items: center;
         float: left;
         height: 37px;
-    } */
-
+    }
