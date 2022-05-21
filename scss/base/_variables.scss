@@ -2,10 +2,10 @@ $bg-color: pink;
 $relleno: 20px; 
 
 $lista1: red header yellow header nav green h1 
-$primario: join ($lista1, $listaAnidada) ;
+$primario: nth($lista1, $listaAnidada) ;
 
 $listaAnidada: (red, header) (yellow, header nav) (green, h1) 
-$lista3: join ($lista1 , $listaAnidada)
+$lista3: join($lista1 , $listaAnidada)
 
 $lista4: append($lista3, (orange, pink, header),comma )
 
@@ -18,15 +18,14 @@ h1 {
 }
 
 $headings: (
-    header: 4em,
-    headernav: 3em,
+    h1: 4em,
+    h2: 3em,
     header nav ul il: 2em, 
-
 );
 
-$header: map-get($headings, header)
+$header: map-get($headings, h1)
 
-header {
+h1 {
     font-size: $combinada; 
 }
 
