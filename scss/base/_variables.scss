@@ -1,10 +1,10 @@
 $bg-color: pink;
 $relleno: 20px; 
 
-$lista1: red header yellow header nav green header nav ul il 
+$lista1: red header yellow header nav green h1 
 $primario: join ($lista1, $listaAnidada) ;
 
-$listaAnidada: (red, header) (yellow, header nav) (green, header nav ul il) 
+$listaAnidada: (red, header) (yellow, header nav) (green, h1) 
 $lista3: join ($lista1 , $listaAnidada)
 
 $lista4: append($lista3, (orange, pink, header),comma )
@@ -13,6 +13,9 @@ header  {
     color: $lista3 ;
 }
 
+h1 {
+    color: $lista1
+}
 
 $headings: (
     header: 4em,
