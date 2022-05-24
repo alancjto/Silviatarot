@@ -7,18 +7,53 @@
     color: blueviolet;
     font-size: 50px;
     font-weight: bold;
-
     
 }
 
-/* .body1 { 
-    font-family: 'roboto', sans-serif;
-    text-align: justify; 
-    font-size: 10px;
-    padding: 1%;
-    margin: 1%;
-    
-} */
+.tituloimg {
+    color: black;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px;
+}
+
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+    animation-timing-function: ease-out;
+}
+
+.slider li { 
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img {
+    width: 50%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    70% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
 
 .menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
