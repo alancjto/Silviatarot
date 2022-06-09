@@ -13,55 +13,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./tarot/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Cuadro</title>
 </head>
 <body class="reset  gradiente">
     <header>
     <h1 class="title_color transform animaciones"><strong>Silvia Tarot</strong></h1>
-    
-    <nav>
-        <ul class="nav_link">
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./contacto.html">Nuestro contacto</a></li>
-        <li><a href="./imagenes.html">Imagenes</a></li>
-        <li><a href="./videos tarot.html">Videos Tarot</a></li>
-        <li><a href="#">Nuestros cursos</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light gradiente"">
+        <div class="container-fluid gradiente">
+          <a class="navbar-brand gradiente" href="./index.html">Inicio</a>
+          <button class="navbar-toggler gradiente" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon gradiente"></span>
+          </button>
+          <div class="collapse navbar-collapse gradiente" id="navbarNav">
+            <ul class="navbar-nav gradiente">
+              <li class="nav-item gradiente">
+                <a href="./contacto.html" class="nav-link active"  href="#">Contacto</a>
+              </li>
+              <li class="nav-item gradiente">
+                <a href="./imagenes.html" class="nav-link gradiente" href="#">Imagenes</a>
+              </li>
+              <li class="nav-item gradiente">
+                <a href="./videos tarot.html" class="nav-link gradiente" href="#">Videos tarot</a>
+              </li>
+              <li class="nav-item gradiente">
+                <a href="./cuadro.html" class="nav-link gradiente">Nuestros cursos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 </header>
-    <section>
-    <article>
+    <section class="">
+    <article class="">
     <h1 class="title_color" id="cursos"><b>Cursos y Precios Tarot</b></h1>
-    <table border="3px">
-    <tr>
-        <td><b>Curso</b></td>
-        <td><b>Duracion</b></td>
-        <td><b>Valor</b></td>
-    </tr>
-    <tr>
-        <td>Astrologia y Tarot</td>
-        <td>seis semanas</td>
-        <td>$5000</td>    
-    </tr>
+    <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./tarot/7.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./tarot/8.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./tarot/9.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./tarot/10.jpeg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./tarot/11.jpeg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./tarot/12.jpeg" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
-<tr>
-<td>Numerologia</td>
-<td>tres semanas</td>
-<td>$2500</td>
-</tr>
-<tr>
-<td>Tarot Rider</td>
-<td>cinco semanas</td>
-<td>$4000</td>
-</tr>
-<tr>
-<td>Tarot Marsella</td>
-<td>cinco semanas</td>
-<td>$3500</td>
-</tr> 
-
-    </table>
     <p><b>Todos nuestros cursos pueden abonarse via credito/debito o contado/transferencia bancaria. Consultar disponibilidad de cupos y horarios, aceptamos dolares y cryptomonedas</b></p>
+    </div>
     </article>
     </section>
 
@@ -74,5 +93,6 @@
         <li><b>2915746535</b></li>
         <li><b>silviamarini55@gmail.com</b></li>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

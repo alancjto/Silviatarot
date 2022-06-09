@@ -1,58 +1,58 @@
 $bg-color: pink;
 $relleno: 20px; 
 
-$lista1: red header yellow header nav green h1 
-$primario: nth($lista1, $listaAnidada) ;
+// $lista1: red header yellow header nav green h1 
+// $primario: nth($lista1, $listaAnidada) ;
 
-$listaAnidada: (red, header) (yellow, header nav) (green, h1) 
-$lista3: join($lista1 , $listaAnidada)
+// $listaAnidada: (red, header) (yellow, header nav) (green, h1) 
+// $lista3: join($lista1 , $listaAnidada)
 
-$lista4: append($lista3, (orange, pink, header),comma )
+// $lista4: append($lista3, (orange, pink, header),comma )
 
-header  {
-    color: $lista3 ;
-}
+// header  {
+//     color: $lista3 ;
+// }
 
-h1 {
-    color: $lista1
-}
+// h1 {
+//     color: $lista1
+// }
 
-$headings: (
-    h1: 4em,
-    h2: 3em,
-    header nav ul il: 2em, 
-);
+// $headings: (
+//     h1: 4em,
+//     h2: 3em,
+//     header nav ul il: 2em, 
+// );
 
-$header: map-get($headings, h1)
+// $header: map-get($headings, h1)
 
-h1 {
-    font-size: $combinada; 
-}
+// h1 {
+//     font-size: $combinada; 
+// }
 
-$colores: (
-    primario: black 
-    secundario: pink 
-);
+// $colores: (
+//     primario: black 
+//     secundario: pink 
+// );
 
-$combinada: map-merge($headings, $colores) ; 
+// $combinada: map-merge($headings, $colores) ; 
 
-@each $color in $lista1 {
-    .#{$color} {
-        background-color: $color;
-    }
+// @each $color in $lista1 {
+//     .#{$color} {
+//         background-color: $color;
+//     }
     
-}
+// }
 
-@each $color , $header in $listaAnidada {
-    .#{$header}-icon {
-        fill: $color; 
-    }
+// @each $color , $header in $listaAnidada {
+//     .#{$header}-icon {
+//         fill: $color; 
+//     }
     
-}
+// }
 
-@each $heading ,$size in $headings {
-    #{$heading} {
-        font-size: $sizegit ;
-    }
+// @each $heading ,$size in $headings {
+//     #{$heading} {
+//         font-size: $sizegit ;
+//     }
     
-}
+// }

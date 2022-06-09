@@ -13,31 +13,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./tarot/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Silvia Tarot</title>
 </head>
 <body class="reset gradiente">
     
     <header> 
         <h1 class="title_color transform animaciones"><strong>Silvia Tarot</strong></h1>
-        <nav>
-            <ul class="nav_link">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./contacto.html">Nuestro contacto</a></li>
-            <li><a href="./imagenes.html">Imagenes</a></li>
-            <li><a href="#">Videos Tarot</a></li>
-            <li><a href="./cuadro.html">Nuestros cursos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light gradiente"">
+            <div class="container-fluid gradiente">
+              <a class="navbar-brand gradiente" href="./index.html">Inicio</a>
+              <button class="navbar-toggler gradiente" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon gradiente"></span>
+              </button>
+              <div class="collapse navbar-collapse gradiente" id="navbarNav">
+                <ul class="navbar-nav gradiente">
+                  <li class="nav-item gradiente">
+                    <a href="./contacto.html" class="nav-link active"  href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./imagenes.html" class="nav-link gradiente" href="#">Imagenes</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./videos tarot.html" class="nav-link gradiente" href="#">Videos tarot</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./cuadro.html" class="nav-link gradiente">Nuestros cursos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 </header>
-<section>
+<section class="flex-section">
     <div>
-        <h1 class="tituloimg">Videos Tarot</h1>
+        <h1 class="title_color">Videos Tarot</h1>
+    </div>
+    <div class="container">
+    <div class="card" style="width: 100%; height: 100% padding: 50px;background: linear-gradient(to bottom, orange , rgb(212, 93, 13));
+    ;">
+        <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/3_jlhE-D67k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text"><a>Este es un breve video sobre la historia y el origen de la Astrologia.</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card" style="width: 100%; background: linear-gradient(to bottom, orange , rgb(212, 93, 13));
+    ">
+        <iframe class="videos" width="560" height="315" style="align-items: center;" src="https://www.youtube.com/embed/cnykr4-j00s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text"><a>Este es un breve video sobre la historia y el origen de los signos del zodíaco.</a></p>
+        </div>
+      </div>
     </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3_jlhE-D67k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cnykr4-j00s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+    <div class="grid_index">
     <footer class="footer">
         <h4 id="contacto">Seguime en mis redes</h4>
         <a href="https://www.instagram.com/silvia.mar51" target="_BLANK">Instagram</a>
@@ -47,5 +78,7 @@
         <li><b>2915746535</b></li>
         <li><b>silviamarini55@gmail.com</b></li>
         </footer>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -18,18 +18,32 @@
 <body class="reset  gradiente">
     <header>
         <h1 class="title_color transform animaciones"><strong>Silvia Tarot</strong></h1>
-        <nav>
-            <ul class="nav_link">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./contacto.html">Nuestro contacto</a></li>
-            <li><a href="./imagenes.html">Imagenes</a></li>
-            <li><a href="./videos tarot.html">Videos Tarot</a></li>
-            <li><a href="#">Nuestros cursos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light gradiente"">
+            <div class="container-fluid gradiente">
+              <a class="navbar-brand gradiente" href="./index.html">Inicio</a>
+              <button class="navbar-toggler gradiente" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon gradiente"></span>
+              </button>
+              <div class="collapse navbar-collapse gradiente" id="navbarNav">
+                <ul class="navbar-nav gradiente">
+                  <li class="nav-item gradiente">
+                    <a href="./contacto.html" class="nav-link active"  href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./imagenes.html" class="nav-link gradiente" href="#">Imagenes</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./videos tarot.html" class="nav-link gradiente" href="#">Videos tarot</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./cuadro.html" class="nav-link gradiente">Nuestros cursos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
     </header>
     <div class="container">
-      <form  id="contactus" action="" method="post" class="form">
+      <form  id="contactus" action="" method="post" class="form" style="padding: 80%; margin: 0%; margin-left: 0%; width: 300px;">
           <h3>Formulario de contacto</h3>
           <fieldset> <input placeholder="Nombre y Apellido" type="text" tabindex="1" required autofocus> </fieldset>
           <fieldset> <input placeholder="Correo electrónico" type="email" tabindex="2" required> </fieldset>
@@ -38,7 +52,9 @@
           <fieldset> <button name="submit" type="submit" id="contactus-submit"
                   data-submit="...Sending">Enviar</button> </fieldset>
       </form>
-      <img class="imagen_formu" src="./tarot/6.jpg" alt="">
+      <div class="flex-article">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99632.12800632835!2d-62.297863500000034!3d-38.70623619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda3124966a391%3A0xc8e8a41ae9de981c!2sBAHIA%20BLANCA!5e0!3m2!1ses-419!2sar!4v1654810877322!5m2!1ses-419!2sar" width="400" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
     <footer class="footer">
         <h4 id="contacto">Seguime en mis redes</h4>

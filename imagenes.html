@@ -13,6 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./tarot/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <title>Imagenes tarot</title>
 </head>
@@ -20,26 +22,69 @@
     
     <header> 
         <h1 class="title_color transform animaciones"><strong>Silvia Tarot</strong></h1>
-        <nav>
-            <ul class="nav_link">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./contacto.html">Nuestro contacto</a></li>
-            <li><a href="./imagenes.html">Imagenes</a></li>
-            <li><a href="./videos tarot.html">Videos Tarot</a></li>
-            <li><a href="./cuadro.html">Nuestros cursos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light gradiente"">
+            <div class="container-fluid gradiente">
+              <a class="navbar-brand gradiente" href="./index.html">Inicio</a>
+              <button class="navbar-toggler gradiente" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon gradiente"></span>
+              </button>
+              <div class="collapse navbar-collapse gradiente" id="navbarNav">
+                <ul class="navbar-nav gradiente">
+                  <li class="nav-item gradiente">
+                    <a href="./contacto.html" class="nav-link active"  href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./imagenes.html" class="nav-link gradiente" href="#">Imagenes</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./videos tarot.html" class="nav-link gradiente" href="#">Videos tarot</a>
+                  </li>
+                  <li class="nav-item gradiente">
+                    <a href="./cuadro.html" class="nav-link gradiente">Nuestros cursos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+          </nav>
 </header>
-<section>
-    <h1 class="tituloimg">Imagenes Tarot</h1>
-    <div class="slider">
-        <ul>
-            <li><img src="./tarot/6.jpg" alt=""></li>
-            <li><img src="./tarot/16.jpg" alt=""></li>
-            <li><img src="./tarot/5.webp" alt=""></li>
-            <li><img src="./tarot/tarot.ico.png" alt=""></li>
-        </ul>
-    </div>
+<section class="container">
+    <h1 class="title_color">Imagenes Tarot</h1>
+    <div id="carouselExampleControls" class="carousel slide flex-article" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active flex-article">
+            <img src="./tarot/5.webp" class="d-block w-100 imagen_cfg" alt="...">
+          </div>
+          <div class="carousel-item flex-article">
+            <img src="./tarot/tarot.ico.png" class="d-block w-100 imagen_cfg" alt="...">
+          </div>
+          <div class="carousel-item flex-article">
+            <img src="./tarot/6.jpg" class="d-block w-100 imagen_cfg" alt="...">
+          </div>
+          <div class="carousel-item flex-article">
+            <img src="./tarot/13.jpg" class="d-block w-100 imagen_cfg" alt="...">
+          </div>
+          <div class="carousel-item flex-article">
+            <img src="./tarot/14.jpg" class="d-block w-100 imagen_cfg" alt="...">
+          </div>
+          <div class="carousel-item flex-article">
+            <img src="./tarot/16.jpg" class="d-block w-100 imagen_cfg" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    
+
+   
+      </div>
     
 </section>
 
@@ -52,5 +97,6 @@
         <li><b>2915746535</b></li>
         <li><b>silviamarini55@gmail.com</b></li>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
