@@ -1,5 +1,8 @@
 // Exijo al usuario a enviar "XALAN" sino vuelvo a pedirle un dato 
 
+const { access } = require("graceful-fs");
+const { identityForEmail } = require("sshpk");
+
 let usuario = prompt("Porfavor ingrese su nombre de usuario"); 
 
 while (usuario != "XALAN"){
@@ -67,3 +70,31 @@ let catalogoHTML= "";
 for(let i = 0; i < productos.length; i++) {
     catalogoHTML += productoHTNL(productos[i]);
 }
+
+// creando eventos con imput // 
+
+const imput = document.getElementById("Nombre y Apellido")
+
+<input placeholder="Nombre y Apellido" type="text" tabindex="1" required autofocus></imput> 
+
+const accion = () => {
+    console.log('Has hecho click') 
+}
+
+imput.addEventListener('click' , accion);
+
+imput.addEventListener('imput' , (event) => {
+    console.log(event.data)
+}) 
+
+let buton = document.getElementById('submit')
+
+buton.addEventListener('click' , funcionALlamar);
+
+function funcionALlamar () {
+    console.log("mensaje");
+}
+
+
+
+
