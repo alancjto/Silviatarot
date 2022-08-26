@@ -19,6 +19,8 @@ const Ciudad = document.getElementById('validationCustom03')
 
 const Telefono = document.getElementById('validationCustom05')
 
+const Enviar = document.getElementById('Registrar')
+
 
 const accion1 = () => {
     formValues['Nombre'] = document.getElementById('validationCustom01').value;
@@ -53,7 +55,18 @@ const accion4 = () => {
         localStorage.setItem('formValues' , JSON.stringify(formValues));
         console.log(formValues);
         console.log('ingresando telefono')
+        
     }
+    const accion6 = () => {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
+    
 
 
 
@@ -66,6 +79,8 @@ Email.addEventListener('change' , accion3)
 Ciudad.addEventListener('change' , accion4)
 
 Telefono.addEventListener('change' , accion5)
+
+Enviar.addEventListener('click' , accion6)
 
 
 
