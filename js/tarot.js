@@ -55,8 +55,11 @@ const accion4 = () => {
         localStorage.setItem('formValues' , JSON.stringify(formValues));
         console.log(formValues);
         console.log('ingresando telefono')
-        
+
     }
+
+
+ // agrego liberia para dar notificado al usuario que sus datos se cargaron correctamente //   
     const accion6 = () => {
         Swal.fire({
             position: 'top-end',
