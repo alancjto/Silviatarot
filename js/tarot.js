@@ -1,5 +1,7 @@
 // creando eventos con imput y agregando datos del imput generados por los usuarios al local storage y viendolos en consola con json.// 
 
+
+
 if (!localStorage.getItem('formValues')) {
     formValues = {};
     
@@ -62,14 +64,14 @@ const accion4 = () => {
  // agrego liberia para dar notificado al usuario que sus datos se cargaron correctamente //   
     const accion6 = () => {
         Swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Tu solicitud ah sido enviada',
             showConfirmButton: false,
             timer: 1500
           })
     }
-    
+
 
 
 
@@ -86,6 +88,26 @@ Telefono.addEventListener('change' , accion5)
 Enviar.addEventListener('click' , accion6)
 
 
+// solicito catalogo a mercado libre api //
+
+const pedirPost = async () => {
+    const posts = document.getElementById("catalogoCartastarot");
+    
+    fetch(`https://api.mercadolibre.com/sites/MLA/categories`)
+    
+    .then( (response) => response.json())
+    .then( (data) => {
+        data.forEach( (post) => {
+            const li = document.createElement(`li`);
+            li.innerHTML = `
+            <h2>${post.id}</h2>
+            <p>${post.name}</p>
+            `;
+            console.log(data);
+        });
+    });
+    }
+    pedirPost();
 
 
 
